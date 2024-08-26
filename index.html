@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasette Bakers Website </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<style>
+    .menu-header {
+        position: relative;
+        padding-left: 150px; /* Adjust padding to create space for the tag */
+    }
+
+    .menu-tag {
+        position: absolute;
+        top: -40px; /* Adjust this value based on your heading's height */
+        left: 0;
+        background-color: #e6db42;
+        border-radius: 50%;
+        padding: 15px;
+        width: 250px; /* Adjust width for better readability */
+        height: auto; /* Allow height to adjust automatically */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds a shadow for better visibility */
+    }
+
+    .menu-info {
+        margin: 0;
+        font-size: 13px; /* Smaller font size for additional info */
+        color: #333;
+        line-height: 1.4;
+    }
+</style>
+
+
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src=" Bakery-logo.png  " alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chief">CHIEF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="hero" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#hero" data-slide-to="0" class="active"></li>
+            <li data-target="#hero" data-slide-to="1"></li>
+            <li data-target="#hero" data-slide-to="2"></li>
+        </ol>
+
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay"></div>
+                <img src="  IMG-20240822-WA0015-removebg-preview.png   " class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-md-block">
+                    <h2 class="display-4">Welcome to Rasette Bakers </h2>
+                    <p>  At Rasette Bakers, we believe in the art of baking. Our passion for creating delicious and beautifully crafted treats is matched only by our commitment to quality and customer satisfaction. </p>
+                       <p>  Whether you're looking for freshly baked bread, delightful pastries, or custom cakes for your special occasions, we've got something to satisfy every craving. Step into our world of flavor and let us sweeten your day.</p>
+                    <a href="order.html" class="btn btn-primary"> Explore Our Menu  </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="chicken.png-removebg-preview.png" alt="Slide 2">
+                <div class="carousel-caption d-md-block">
+                    <h2 class="display-4"> Freshly Baked, Every Day    </h2>
+                    <p>Experience the warmth and aroma of freshly baked delights at Rasette Bakers. Our team of expert bakers starts early each morning to bring you the finest bread, pastries, and cakes, crafted with care and precision.</p> 
+                    <p> Come by and taste the difference that fresh baking makes.                    </p>
+                    <a href="index.html" class="btn btn-primary">Visit Our Bakery        </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src=" IMG-20240804-WA0032-removebg-preview (1).png " class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-md-block">
+                    <h2 class="display-4"> Place Your Order Today </h2>
+                    <p>Craving something delicious? At Rasette Bakers, we make it easy for you to enjoy our mouth-watering treats from the comfort of your home. Whether it's a birthday cake, a box of pastries, or a customized order for your special event, we've got you covered. Simply choose your favorites, and we'll take care of the rest. Fast, fresh, and delivered right to your door!</p>
+                    
+                    <a href=" https://wa.me/923078571024 " class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#hero" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#hero" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- hero ends here  -->
+
+    <!-- about start 2 -->
+    <section id="about-us" class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>ABOUT US</h2>
+                <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tab-1-tab" data-toggle="tab" href="#tab-1" role="tab"
+                            aria-controls="tab-1" aria-selected="true">Our Heritage
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-2-tab" data-toggle="tab" href="#tab-2" role="tab"
+                            aria-controls="tab-2" aria-selected="false"> Handcrafted Delights
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-3-tab" data-toggle="tab" href="#tab-3" role="tab"
+                            aria-controls="tab-3" aria-selected="false"> Baked with Love</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="aboutTabsContent">
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+                        <p> Discover the rich history behind our family-owned bakery. From our humble beginnings to
+                            becoming a beloved local favorite, our journey is steeped in tradition, passion, and a love
+                            for baking. Learn about the generations of bakers who have perfected our recipes and the
+                            values that continue to inspire us today. </p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+                        <p> At the heart of our bakery are our handcrafted delights. Every item is made with the finest
+                            ingredients, carefully selected to ensure quality and flavor. From our signature pastries to
+                            custom cakes, each product is crafted with care and attention to detail, bringing you the
+                            taste of homemade goodness with every bite
+                        <p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+                        <p> Every item in our bakery is a labor of love. We take pride in crafting our baked goods from
+                            scratch, using recipes passed down through generations. Each loaf of bread, every cake, and
+                            every pastry is made with a passion for baking that ensures the highest quality and the most
+                            delightful flavors, bringing a touch of warmth to your home with every bite.
+
+                        </p>
+                    </div>
+                </div>
+                <a href="About.html" class="btn btn-primary mt-3">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <video class="img-fluid" autoplay loop muted playsinline>
+                    <source src=" y2mate.com - I baked perfect croissants cooking food foodasmr recipe_360p.mp4 "
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- about end  2-->
+    
+
+    <!-- menu section-->
+     
+
+<!-- menu section-->
+<section id="menu" class="container mt-5">
+    <div class="menu-header">
+        <h2 class="text-center mb-5">MENU ITEMS</h2>
+
+
+        <div class="menu-tag">
+            <p class="menu-info">
+               
+                "Prices are not listed as they vary based on the order. Please contact us directly for accurate pricing details.Thank you !"
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        
+            <!-- Menu Item 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:12.99</div> -->
+                    <img src=" IMG-20240804-WA0046-removebg-preview.png" class="img-fluid" alt="Dish 1">
+                    <div class="dish-name"> Aniversary Cake</div>
+                </div>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:9.99</div> -->
+                    <img src="IMG-20240804-WA0041-removebg-preview.png " class="img-fluid" alt="Dish 2">
+                    <div class="dish-name"> Double Cake</div>
+                </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:9.99</div> -->
+                    <img src="   IMG-20240804-WA0054-removebg-preview.png" class="img-fluid" alt="Dish 2">
+                    <div class="dish-name"> Degree theme </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:8.99</div> -->
+                    <img src="IMG-20240804-WA0061-removebg-preview.png" class="img-fluid" alt="Dish 3">
+                    <div class="dish-name">Doll Cake</div>
+                </div>
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:11.99</div> -->
+                    <img src="IMG-20240804-WA0032-removebg-preview (1).png " class="img-fluid" alt="Dish 5">
+                    <div class="dish-name">Pizza</div>
+                </div>
+            </div>
+            <!-- Menu Item 6 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:7.99</div> -->
+                    <img src=" IMG-20240804-WA0066-removebg-preview (2).png " class="img-fluid" alt="Dish 6">
+                    <div class="dish-name">Zinger chicken</div>
+                </div>
+            </div>
+            <!-- Menu Item 7 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:5.99</div> -->
+                    <img src=" IMG-20240804-WA0045-removebg-preview.png" class="img-fluid" alt="Dish 7">
+                    <div class="dish-name">Ptties </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 8 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:6.99</div> -->
+                    <img src=" IMG-20240804-WA0047-removebg-preview.png " class="img-fluid" alt="Dish 4">
+                    <div class="dish-name">Paratha roll</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more rows as needed -->
+
+        <!-- Menu Items Row -->
+        <div class="row">
+            <!-- Menu Item 12 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:6.99</div> -->
+                    <img src=" IMG-20240804-WA0082-removebg-preview.png " class="img-fluid" alt="Dish 4">
+                    <div class="dish-name">Chicken pakora </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 9 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:11.99</div> -->
+                    <img src=" IMG-20240822-WA0017-removebg-preview.png  " class="img-fluid" alt="Dish 5">
+                    <div class="dish-name">Zinger burger </div>
+                </div>
+            </div>
+
+        
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:7.99</div> -->
+                    <img src=" IMG-20240824-WA0001-removebg-preview.png  " class="img-fluid" alt="Dish 6">
+                    <div class="dish-name">Chicken bread</div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="menu-item">
+                    <!-- <div class="price">Rs:5.99</div> -->
+                    <img src=" chicken.png-removebg-preview.png" class="img-fluid" alt="Dish 7">
+                    <div class="dish-name">Charga</div>
+                </div>
+            </div>
+        </div> 
+
+    </section>
+
+    <!-- menu ends  -->
+
+
+
+    <!-- Chief Section -->
+    <section id="chief" class="py-5">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src=" https://png.pngtree.com/png-vector/20230808/ourlarge/pngtree-female-baker-clipart-pastry-chef-woman-in-costume-with-pastry-recipes-vector-png-image_6860774.png"
+                        alt="Chief" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3">MEET OUR CHIEF BAKER</h2>
+                    <p>With more than <strong>5 years of experience ,</strong> our chief baker <strong> Sumna
+                        </strong>brings a passion for crafting the finest baked
+                        goods. From traditional recipes to innovative creations, each item is made with love and
+                        dedication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Slider) -->
+
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container text-center">
+
+            <h2 class="text-center mb-5">GALLERY</h2>
+
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="IMG-20240804-WA0042-removebg-preview.png" alt="Bakery Item 1"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Birthday Cake</h5>
+                                        <!-- <p class="card-text">Rs:20.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src=" IMG-20240804-WA0043-removebg-preview.png   " alt="Bakery Item 2"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mehndi cake</h5>
+                                        <!-- <p class="card-text">Rs:15.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src=" IMG-20240804-WA0049-removebg-preview.png    " alt="Bakery Item 3"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Umrah cake </h5>
+                                        <!-- <p class="card-text">Rs:12.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="IMG-20240804-WA0051-removebg-preview.png" alt="Bakery Item 4"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Car theme</h5>
+                                        <!-- <p class="card-text">Rs:18.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="  IMG-20240804-WA0054-removebg-preview.png        " alt="Bakery Item 5"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Baby boss  theme </h5>
+                                        <!-- <p class="card-text">Rs:10.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src=" IMG-20240804-WA0056-removebg-preview (1).png    " alt="Bakery Item 6"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flower Cake</h5>
+                                        <!-- <p class="card-text">Rs:8.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="IMG-20240804-WA0064-removebg-preview.png    " alt="Bakery Item 7"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flower Cake</h5>
+                                        <!-- <p class="card-text">Rs:14.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="  IMG-20240822-WA0014-removebg-preview.png  " alt="Bakery Item 8"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Flower cake</h5>
+                                        <!-- <p class="card-text">Rs:14.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="IMG-20240804-WA0063-removebg-preview.png  " alt="Bakery Item 9"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cream Cake</h5>
+                                        <!-- <p class="card-text">Rs:14.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src=" cak.png-removebg-preview.png  " alt="Bakery Item 10"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Flower cake </h5>
+                                        <!-- <p class="card-text">Rs:14.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src=" IMG-20240804-WA0038-removebg-preview.png  " alt="Bakery Item 11"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fly cake</h5>
+                                        <!-- <p class="card-text">Rs:14.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src=" IMG-20240804-WA0058-removebg-preview.png  " alt="Bakery Item 12"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Doll cake </h5>
+                                        <!-- <p class="card-text">Rs:16.00</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- gallery -->
+
+
+    <!-- order start  -->
+
+    <!-- Order Now Section -->
+    <section id="order-now">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 content">
+
+
+                    <h2 class="text-center mb-5">ORDER NOW </h2>
+                    <p> Place your order now, and our delivery team will ensure your fresh and delicious food arrives at
+                        your doorstep within 30 minutes. Our dedicated delivery boy guarantees that your order is
+                        handled with the utmost care and delivered safely, so you can enjoy a delightful meal without
+                        any worries. Order now and experience the convenience of our fast and reliable service!"
+                    </p>
+                    <a href="  https://wa.me/923078571024 " class="btn btn-order">Order Now</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src=" https://thumbs.dreamstime.com/z/delivery-boy-ride-scooter-motorcycle-servic-service-order-worldwide-shipping-fast-free-transport-75096257.jpg"
+                        alt="Order Now Image" class="order-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- order end  -->
+
+
+
+
+
+    <!-- Footer Section -->
+
+    <h2 class="text-center mb-6">CONTACT US</h2>
+
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">RASSETTE BAKER </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dicta aliquid possimus!</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+                    <p><a href="#" class="text-light text-decoration-none">Home</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Menu</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">About </a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Contact Us</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
+                    <p><a href="#" class="text-light text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Terms of Service</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">FAQ</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Help</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p><i class="bi bi-house-door-fill"></i> Mulhal Mughlan , Punjab, Pakistan</p>
+
+
+                    <p><i class="bi bi-telephone-fill"></i> 03078571024 </p>
+                    <p><i class="bi bi-printer-fill"></i> 03078571024 </p>
+
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">
+                        © 2024 Rassette Baker. All Rights Reserved and Designed by Sonia .
+                    </p>
+                </div>
+
+
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <!-- facebook link  -->
+                            <li class="list-inline-item">
+                                <a href="  https://www.facebook.com/profile.php?id=61556106331362&mibextid=kFxxJD       "
+                                    class="btn-floating btn-sm text-light" style="font-size: 23px;"><i
+                                        class="bi bi-facebook"></i></a>
+                            </li>
+                            <!-- whattsapp link  -->
+                            <li class="list-inline-item">
+                                <a href="  https://wa.me/923078571024    " class="btn-floating btn-sm text-light"
+                                    style="font-size: 23px;"><i class="bi bi-whatsapp"></i></a>
+                            </li>
+                            <!-- instagram link  -->
+                            <li class="list-inline-item">
+                                <a href=" https://www.instagram.com/rosettebakers_1?igsh=a2Fnd3FnbW1sdTBk
+                                " class="btn-floating btn-sm text-light" style="font-size: 23px;"><i
+                                        class="bi bi-instagram"></i></a>
+                            </li>
+
+                            <!-- tiktok link  -->
+
+                            <li class="list-inline-item">
+                                <a href="  https://www.tiktok.com/@rosettebakers?_t=8ofhk65HE3E&_r=1  "
+                                    class="btn-floating btn-sm text-light" style="font-size: 23px;">
+                                    <i class="bi bi-tiktok"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section  -->
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        // Include the JavaScript here or in your external script file
+        function handleNavClick(targetId) {
+            document.querySelectorAll('.home-page-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(targetId).classList.add('active');
+        }
+
+        document.querySelectorAll('.nav-link').forEach(navLink => {
+            navLink.addEventListener('click', function () {
+                const targetId = this.getAttribute('href').substring(1).toLowerCase() + '-button';
+                handleNavClick(targetId);
+            });
+        });
+    </script>
+</body>
+
+</html>
